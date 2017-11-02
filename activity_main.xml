@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android= "http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent">
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:hint="“Enter your Name”"
+        android:inputType="none" />
+
+    <Button
+        android:id="@+id/send_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick= "displayMessage"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/surnameTV"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/edtSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtName"
+        android:ems="10"
+        android:hint="“Enter Surname”"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/surnameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nameTV"
+        android:layout_below="@+id/nameTV"
+        android:layout_marginTop="12dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Hi "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_below="@+id/edtSurname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="158dp" />
+
+</RelativeLayout>
